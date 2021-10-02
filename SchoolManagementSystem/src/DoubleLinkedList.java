@@ -156,53 +156,6 @@ public boolean insertNode(String NAME, long ID,double GPA,String DEP, int locati
     }
     return retval;
 }
-// public void updateNode(){
-//     if(Head != null){
-//     Scanner sc = new Scanner(System.in);
-//     Node temp = Head;
-//     System.out.println("Do you want to update a student data? (y/n):");
-//     String ans1 = sc.nextLine();
-//     if(!ans1.toLowerCase().equals("n")){
-//         System.out.println("Which student you want to update his/her data?");
-//         int n=0;
-//         int ans2 = sc.nextInt();
-//         while(temp.Next!=null && n!=ans2){
-//             temp = temp.Next;
-//             n++;
-//         }
-//         System.out.println("Which data you want to update? (-1 to exit):\n1)Name.\n2)ID.\n3)Department.\n4)GPA.");
-//         int ans3 = sc.nextInt();
-//         if(ans3 != -1) {
-//             Scanner in = new Scanner(System.in);
-//             if (ans3 == 1) {
-//                 System.out.println("Enter student name:");
-//                 String newName = in.nextLine();
-//                 temp.name = newName;
-//                 System.out.println("Student name has been updated.");
-//             } else if (ans3 == 2) {
-//                 System.out.println("Enter student new ID:");
-//                 long newID = in.nextLong();
-//                 temp.id = newID;
-//                 System.out.println("Student ID has been updated.");
-//             }else if(ans3 == 3){
-//                 System.out.println("Enter student new department:");
-//                 String newDEP = in.nextLine();
-//                 temp.dep = newDEP;
-//                 System.out.println("Student ID has been updated.");
-//             }else if (ans3 == 4) {
-//                 System.out.println("Enter student new GPA:");
-//                 double newGPA = in.nextDouble();
-//                 temp.gpa = newGPA;
-//                 System.out.println("Student GPA has been updated.");
-//             }
-//         }
-//         }
-//     }else{
-//         System.out.println("No data has been added.");
-//     }
-// }
-
-
 public void updateNode(long id){
     Node temp = new Node();
     temp = Head;
